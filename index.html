@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h1 class="title">Time Conversion</h1>
+            <div class="boxes">
+                <div class="box">
+                    <input type="number" name="from-input" id="from-input" oninput="convert()">
+                    <select name="from-select" id="from-select" onchange="convert()">
+                        <option>Nanosegundo</option>
+                        <option>Microssegundo</option>
+                        <option>Milissegundo</option>
+                        <option>Segundo</option>
+                        <option>Minuto</option>
+                        <option>Hora</option>
+                        <option>Dia</option>
+                        <option>Semana</option>
+                        <option>Mês</option>
+                        <option>Ano-calendário</option>
+                        <option>Década</option>
+                        <option>Século</option>
+                    </select>
+                </div>
+                <span style="padding: 30px;">=</span>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <input type="number" name="to-input" id="to-input" oninput="convert()">
+                    <select name="to-select" id="to-select" onchange="convert()">
+                        <option>Nanosegundo</option>
+                        <option>Microssegundo</option>
+                        <option>Milissegundo</option>
+                        <option>Segundo</option>
+                        <option>Minuto</option>
+                        <option>Hora</option>
+                        <option>Dia</option>
+                        <option>Semana</option>
+                        <option>Mês</option>
+                        <option>Ano-calendário</option>
+                        <option>Década</option>
+                        <option>Século</option>
+                      </select>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/index.js"></script>
+</html>
